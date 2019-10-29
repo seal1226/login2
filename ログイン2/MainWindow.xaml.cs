@@ -29,5 +29,10 @@ namespace ログイン2
         {
             System.Diagnostics.Process.Start(e.Uri.ToString());
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Console.WriteLine(_vm.Password.Value);
+        }
     }
 }
